@@ -61,6 +61,7 @@
         </div>
     </div>
     <script>
+
     // Login event handler added
 
     const loginBtn = document.getElementById("login");
@@ -88,6 +89,7 @@
     const withdrawBtn = document.getElementById("addWithdraw");
     withdrawBtn.addEventListener("click", function() {
         const withdrawNumber = getInputNumber("withdrawAmount");
+        
         updateSpanText("currentWithdraw", withdrawNumber);
         updateSpanText("currentBalance", -1*withdrawNumber);
         
@@ -109,8 +111,6 @@
         const totalAmount = addedNumber + currentNumber;
         document.getElementById(id).innerText = totalAmount;
     }
-
-        
 
     </script>
 </body>
